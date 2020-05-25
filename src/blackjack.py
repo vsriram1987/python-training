@@ -78,7 +78,7 @@ class Player(Participant):
             
     def count(self):
         if Participant.count(self) == True:
-            Participant.addextrapoints()
+            Participant.addextrapoints(self)
             
     def endofgame(self):
         Participant.showcards(self)
